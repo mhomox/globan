@@ -47,7 +47,7 @@ class LoginController extends Controller
      */
     public function __construct()
     {
-        DB::setDefaultConnection('COM_BILLING_DEV');
+        DB::setDefaultConnection('COM_GLOBAN_DEV');
         // DB::setDefaultConnection(session('COM_FIGARO'));
         $this->middleware('guest')->except('logout');
     }

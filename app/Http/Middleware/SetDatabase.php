@@ -9,8 +9,8 @@ class SetDatabase
     public function handle($request, Closure $next)
     {
         //$cDatabase = session('cDatabase');
-        session(['cDatabase' => 'COM_BILLING_DEV']);
-        $cDatabase = 'COM_BILLING_DEV';
+        session(['cDatabase' => 'COM_GLOBAN_DEV']);
+        $cDatabase = 'COM_GLOBAN_DEV';
         // $query = "SELECT SCHEMA_NAME FROM INFORMATION_SCHEMA.SCHEMATA WHERE SCHEMA_NAME =  '".$cDatabase."'";
         // $db = DB::select($query);
         // if (!empty($db)) {

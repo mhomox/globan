@@ -106,12 +106,12 @@ return [
         //     'prefix_indexes' => true,
         // ],
 
-        'COM_BILLING_DEV' => [
+        'COM_GLOBAN_DEV' => [
             'driver' => 'sqlsrv',
             'url' => env('DATABASE_URL'),
             'host' => env('DB_HOST', 'DESKTOP-1Q6RSCT\SQLEXPRESS'),
             'port' => env('DB_PORT', ''),
-            'database' => env('DB_DATABASE', 'COM_BILLING_DEV'),
+            'database' => env('DB_DATABASE', 'COM_GLOBAN_DEV'),
             'username' => env('DB_USERNAME', 'sa'),
             'password' => env('DB_PASSWORD', 'ComUnion123'),
             'charset' => 'utf8',
