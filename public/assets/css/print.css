@@ -1,0 +1,47 @@
+@media print
+{
+	#DivIdToPrint{
+		width: 1000px  !important;
+		margin: 0 auto;
+		font-size: 14px;
+		background: #FFFF;
+		padding: 50px;
+
+	}
+
+	#DivIdToPrint .card-body{
+		padding: 0 !important;
+	}
+	#DivIdToPrint .table-bordered td,#DivIdToPrint .table-bordered th{
+		border: 2px solid #999 !important;
+	}
+
+	#DivIdToPrint .table thead th{
+		border-bottom: 2px solid #999 !important;
+	}
+
+	#DivIdToPrint .card-header{
+		padding: 10px 0;
+	}
+	#DivIdToPrint .col-md-8 {
+		padding: 10px 10px 10px 0;	
+	}
+
+	#DivIdToPrint .card{
+		border:none;
+	}
+	.company{
+		margin: 20px 20px 10px 0px;
+		float: left;
+		font-size: 12px;
+	}
+
+	#DivIdToPrint .card-footer{
+		margin-top: 30px;
+	     
+	}
+
+	#print_btn{
+		float: right;
+	}
+}
