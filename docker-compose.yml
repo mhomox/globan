@@ -1,0 +1,30 @@
+services:
+  app:
+    image: php:8.0-apache
+    container_name: globan
+    volumes:
+      - .:/var/www/html
+    ports:
+      - "8080:80"
+    environment:
+      - APACHE_DOCUMENT_ROOT=/var/www/html/public
+    working_dir: /var/www/html
+    depends_on:
+      - db
+    extra_hosts:
+      - "host.docker.internal:host-gateway" # Allows communication with the host machine
+
+  db:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    container_name: laravel_sqlserver
+    restart: always
+    environment:
+      SA_PASSWORD: "StrongP@ssw0rd!"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1433:1433"
+    volumes:
+      - db_data:/var/opt/mssql
+
+volumes:
+  db_data:
