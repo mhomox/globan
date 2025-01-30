@@ -42,7 +42,7 @@
         <p><b>Customer Name:</b> {{ $sale->cName }}</p>
         <p><b>Address:</b> {{ $sale->cAddress }}</p>
         <p><b>Contact:</b> {{ $sale->customer->cContact ?? 'N/A' }}</p>
-        <p><b>Date:</b> {{ formatDate($sale->dDate) }}</p>
+        <p><b>Date:</b> {{ \Carbon\Carbon::parse($sale->dDate)->format('F j, Y') }}</p>
     </div>
 
     <div>

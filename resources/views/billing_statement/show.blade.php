@@ -106,10 +106,10 @@
                                     <li>Terms :</li>
                                 </ul>
                                 <ul class="list list-unstyled text-right mb-0 ml-auto">
-                                    <li><span class="font-weight-semibold">{{ formatDate($sales->dDate) }}</span></li>
-                                    <li><span class="font-weight-semibold">{{ formatDate($sales->dBillFrom) }}</span></li>
-                                    <li><span class="font-weight-semibold">{{ formatDate($sales->dBillTo) }}</span></li>
-                                    <li><span class="font-weight-semibold">{{ formatDate($sales->dDueDate) }}</span></li>
+                                    <li><span class="font-weight-semibold">{{ \Carbon\Carbon::parse($sales->dDate)->format('F j, Y') }}</span></li>
+                                    <li><span class="font-weight-semibold">{{ \Carbon\Carbon::parse($sales->dBillFrom)->format('F j, Y') }}</span></li>
+                                    <li><span class="font-weight-semibold">{{ \Carbon\Carbon::parse($sales->dBillTo)->format('F j, Y') }}</span></li>
+                                    <li><span class="font-weight-semibold">{{ \Carbon\Carbon::parse($sales->dDueDate)->format('F j, Y') }}</span></li>
                                     <li>{{ $sales->cIntTerm }}</li>
                                     <li>{{ $sales->cTerm }}</li>
                                     <li></li>
